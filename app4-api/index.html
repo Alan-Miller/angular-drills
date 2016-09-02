@@ -1,9 +1,29 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+	<head>
+		<link rel="stylesheet" href="shipStyle.css">
+	</head>
+	<body ng-controller="apiController">
+
+
+		<div ng-repeat="ship in ships">
+			<p>Name: {{ ship.name }}</p>
+			<p>Model: {{ ship.model }}</p>
+			<p>Manufacturer: {{ ship.manufacturer }}</p>
+			<p>Cost in credits: {{ ship.cost_in_credits }}</p>
+			<p>Hyperdrive rating: {{ ship.hyperdrive_rating }}</p>
+			<p>Starship class: {{ ship.starship_class }}</p>
+		</div>
+
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+
+		<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>

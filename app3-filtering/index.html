@@ -1,9 +1,30 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="app3">
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body ng-controller="controller3">
+
+
+		<input ng-model="personName" placeholder="Filter by name">
+		<input ng-model="personEmail" placeholder="Filter by email">
+		<input ng-model="personPhone" placeholder="Filter by phone">
+
+		<div ng-repeat="person in info | filter: {name: personName, email: personEmail, phone: personPhone}">
+			<p>{{person.name}}</p>
+			<p>{{person.email}}</p>
+			<p>{{person.phone}}</p>
+		</div>
+
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+
+		<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>
