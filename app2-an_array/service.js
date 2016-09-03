@@ -102,6 +102,19 @@ var myData = [
 ];
 
 
+angular.module('arrayApp').service('arrayService', function() {
+
+
+	this.employees = myData;
+
+
+
+
+
+
+
+
+});
 
 
 
@@ -111,3 +124,4 @@ var myData = [
 
 
 
+// FIN
