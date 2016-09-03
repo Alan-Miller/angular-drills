@@ -103,6 +103,15 @@ var myData = [
 
 
 
+angular.module('arrayApp').service('arrayService', function() {
+
+
+	this.peeps = myData;
+
+
+
+
+});
 
 
 
@@ -111,3 +120,5 @@ var myData = [
 
 
 
+
+// FIN
