@@ -1,5 +1,3 @@
-11, 4, 14, 10
-
 # angular-drills
 
 ## Set 1
