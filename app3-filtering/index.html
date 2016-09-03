@@ -6,7 +6,7 @@
 
 		<input ng-model="empFilter">
 
-		<div ng-repeat="employee in employees | filter: {empFilter}">
+		<div ng-repeat="employee in employees | filter: {name: empFilter}">
 			<p>{{employee.name}}</p>
 			<p>{{employee.email}}</p>
 			<p>{{employee.phone}}</p>
