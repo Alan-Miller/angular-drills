@@ -1,9 +1,28 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>APP4</title>
+	</head>
+	<body ng-controller="apiController">
+
+		<div ng-repeat="planet in planets">
+			<p>Name: <span>{{ planet.name }}</span></p>
+			<p>Terrain: <span>{{ planet.terrain }}</span></p>
+			<p>Climate: <span>{{ planet.climate }}</span></p>
+			<p>Gravity: <span>{{ planet.gravity }}</span></p>
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+
+		<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>
+
+
+<!-- 10 min. -->
+<!-- 5.5 min. -->
+<!-- 5.33 min. -->
