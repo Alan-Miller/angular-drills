@@ -1,0 +1,51 @@
+html {
+  background-color: rgb(53, 68, 170);
+  /*box-sizing: border-box;*/
+}
+
+div.outer {
+
+}
+div.container {
+  background-color: rgb(176, 176, 176);
+  margin: 30px;
+  padding: 14px 30px;
+  border-radius: 24px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 340px;
+}
+
+ul {
+  color: rgb(107, 107, 107);
+  background-color: white;
+  padding: 14px 18px;
+  border-radius: 16px;
+  min-width: 180px;
+}
+span {
+  color: indianred;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  left: 24px;
+  margin: 10px;
+}
+li ul li {
+  margin: -14px;
+}
+
+img {
+  height: 320px;
+  margin: 0 auto;
+}
+.img-span {
+  border-radius: 16px;
+  height: 320px;
+  width: 400px;
+  overflow: hidden;
+}

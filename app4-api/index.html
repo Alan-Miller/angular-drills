@@ -2,14 +2,26 @@
 
 	<head>
 		<title>APP4</title>
+		<!-- <link rel="stylesheet" href="reset.css"> -->
+		<link rel="stylesheet" href="styles.css">
 	</head>
 
 
-	<div ng-repeat="peep in peeps">
-		<p>{{ peep.name }}</p>
-		<p>{{ peep.species }}</p>
-		<p>{{ peep.homeworld }}</p>
-	</div>
+		<div class="container" ng-repeat="peep in peeps | orderBy: 'homeworld'">
+			<ul>
+				<li>Name: <span>{{ peep.name }}</span></li>
+				<li>Species: <span>{{ peep.species.name }}</span></li>
+				<li>Classification: <span>{{ peep.species.classification }}</span></li>
+				<li>Home World: <span>{{ peep.homeworld }}</span></li>
+				<li>Films:</li>
+				<li>
+					<ul ng-repeat="film in peep.films | orderBy: 'episode_id'">
+						<li><span>{{film.title}}</span></li>
+					</ul>
+				</li>
+			</ul>
+			<span class="img-span"><img src="{{peep.img}}"></span>
+		</div>
 
 
 
