@@ -1,9 +1,21 @@
-<html>
+<html ng-app"routingApp">
 	<body>
-		<h1>app6 - routing</h1>
+
+		<h1>routingApp</h1>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+		</ul>
+
+
+		<ui-view></ui-view>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+		<script src="home/homeController.js"></script>
+		<script src="details/detailsController.js"></script>
+		<script src="signup/signupController.js"></script>
+		<script src="starWarsService.js"></script>
 	</body>
 </html>
