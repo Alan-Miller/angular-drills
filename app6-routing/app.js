@@ -1,7 +1,8 @@
-angular.module('routingApp', ['ui.router'])
+  angular.module('routingApp', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider
+  .otherwise('/');
 
   $stateProvider
   .state('home', {
