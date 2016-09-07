@@ -1,0 +1,7 @@
+<p>{{ routeMessage }}</p>
+<p> WELCOME HOME</p>
+
+
+<div ng-repeat="char in chars">
+  <a ui-sref="details({url: char.url})">{{ char.name }}</a>
+</div>

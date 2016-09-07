@@ -1,9 +1,24 @@
-<html>
-	<body>
-		<h1>app6 - routing</h1>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="routingApp">
+
+
+
+	<body style="font-family: sans-serif">
+		<h1>routingApp!</h1>
+		<ul>
+			<a ui-sref="home"><li>HOME</li></a>
+			<a ui-sref="signup"><li>SIGNUP</li></a>
+			<!-- Don't add <li>DETAILS</li> here because it will change depending on state -->
+		</ul>
+
+		<ui-view></ui-view>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+		<script src="home/homeController.js"></script>
+		<script src="details/detailsController.js"></script>
+		<script src="signup/signupController.js"></script>
+		<script src="services/routingService.js"></script>
 	</body>
 </html>
