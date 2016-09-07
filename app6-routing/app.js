@@ -1,7 +1,7 @@
 angular.module('routingApp', ['ui.router'])
-.config(function($stateProvider, $urlRouterProvier) {
+.config(function($stateProvider, $urlRouterProvider) {
 
-  $urlRouterProvier.otherwise('/');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
   .state('home', {
@@ -13,7 +13,8 @@ angular.module('routingApp', ['ui.router'])
     url: '/details',
     controller: 'detailsController',
     templateUrl: 'details/details.html'
-  }).state('signup', {
+  })
+  .state('signup', {
     url: '/signup',
     controller: 'signupController',
     templateUrl: 'signup/signup.html'
