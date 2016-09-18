@@ -1,8 +1,8 @@
 <html ng-app="app3">
 	<body ng-controller="controller">
 
-		<input type="text" placeholder="Filter by date employed" ng-model="dateEmployed">
-		<div ng-repeat="person in data | filter by dateEmployed">
+		<input type="text" placeholder="Filter by date employed" ng-model="personFilter">
+		<div ng-repeat="person in data | filter: {email: personFilter}">
 			<p>{{ person.name }}</p>
 			<p>{{ person.email }}</p>
 			<p>{{ person.phone }}</p>
