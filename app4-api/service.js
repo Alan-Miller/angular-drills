@@ -36,6 +36,15 @@ angular.module('apiApp').service('apiService', function($http, $q) {
     return promise;
   };
 
+  this.getDef = function() {
+    return $http({
+      method: 'GET',
+      url: 'https://wordsapiv1.p.mashape.com/words/skullduggery'
+    }).then(function(stuff) {
+      return stuff.data;
+    });
+  };
+
 
 });
 

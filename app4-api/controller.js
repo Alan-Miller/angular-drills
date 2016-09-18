@@ -23,6 +23,18 @@ angular.module('apiApp').controller('apiController', function($scope, apiService
   $scope.getShips();
 
 
+  $scope.getDef = function() {
+    var prms = apiService.getDef();
+    prms.then(function(word) {
+      $scope.define = word;
+      console.log(word);
+    });
+  };
+  $scope.getDef();
+
+
+
+
 // Use response variable if you are expecting a web response (including .data). Use a more specific
 // variable here because we are wanting something more specific.
 
