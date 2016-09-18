@@ -1,16 +1,5 @@
-angular.module('arrayApp').controller('arrayController', function($scope, arrayService) {
+angular.module('app2').controller('controller', function($scope, service) {
 
-
-  $scope.getPeeps = function() {
-
-    $scope.peeps = arrayService.peeps;
-
-  };
-  $scope.getPeeps();
-
-
-
-
-
+  $scope.data = service.data;
 
 });

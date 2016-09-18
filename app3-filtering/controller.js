@@ -1,15 +1,6 @@
-angular.module('app3').controller('controller3', function($scope, service3) {
+angular.module('app3').controller('controller', function($scope, service) {
 
 
-  $scope.getPeeps = function() {
-
-    $scope.peeps = service3.peeps;
-
-  };
-  $scope.getPeeps();
-
-
-
-
+  $scope.data = service.data;
 
 });

@@ -102,21 +102,8 @@ var myData = [
 ];
 
 
+angular.module('app3').service('service', function() {
 
-angular.module('app3').service('service3', function() {
-
-
-	this.peeps = myData;
-
-
-
-
+	this.data = myData;
 
 });
-
-
-
-
-
-
-// FIN

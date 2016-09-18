@@ -102,17 +102,10 @@ var myData = [
 ];
 
 
+angular.module('app2').service('service', function() {
 
-angular.module('arrayApp').service('arrayService', function() {
+	this.data = myData;
 
-
-	this.peeps = myData;
 
 
 });
-
-
-
-
-
-// FIN

@@ -1,1 +1,1 @@
-angular.module('arrayApp', []);
+angular.module('app2', []);
