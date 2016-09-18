@@ -1,4 +1,4 @@
-angular.module('appy7').service('service', function() {
+angular.module('app7').service('service', function() {
 
 
 

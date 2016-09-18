@@ -1,1 +1,1 @@
-angular.module('appy7', []);
+angular.module('app7', []);

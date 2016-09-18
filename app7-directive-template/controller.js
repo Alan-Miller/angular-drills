@@ -1,4 +1,4 @@
-angular.module('appy7').controller('controller', function($scope, service) {
+angular.module('app7').controller('controller', function($scope, service) {
 
 
 
