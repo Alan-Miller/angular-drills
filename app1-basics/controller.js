@@ -1,11 +1,5 @@
-angular.module('app1').controller('controller1', function($scope) {
+angular.module('app1').controller('controller', function($scope) {
 
-
-  // $scope.tCats = 'ThunderCats';
-
-
-
-
-
+  $scope.test = 'woo';
 
 });
