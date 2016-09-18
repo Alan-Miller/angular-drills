@@ -1,19 +1,10 @@
-angular.module('apiApp').controller('apiController', function($scope, apiService) {
+angular.module('app4').controller('controller', function($scope, service) {
 
-
-  $scope.getPlanets = function() {
-
-    apiService.getPlanets().then(function(planets) {
-
-      $scope.planets = planets.data.results;
-
+  $scope.showPokemon = function(pokename) {
+    service.getPokemon(pokename).then(function(response) {
+      $scope.pokemon = response.data;
     });
-
   };
-  $scope.getPlanets();
-
-
-
-
+  // $scope.showPokemon();
 
 });

@@ -1,28 +1,24 @@
-<html ng-app="apiApp">
-	<head>
-		<link rel="stylesheet" href="styles.css">
-		<title>APP4</title>
-	</head>
-	<body ng-controller="apiController">
+<html ng-app="app4">
+	<body ng-controller="controller">
 
-		<div ng-repeat="planet in planets">
-			<p>Name: <span>{{ planet.name }}</span></p>
-			<p>Terrain: <span>{{ planet.terrain }}</span></p>
-			<p>Climate: <span>{{ planet.climate }}</span></p>
-			<p>Gravity: <span>{{ planet.gravity }}</span></p>
+
+		<input type="text" placeholder="Search Pokemon name" ng-model="pokename">
+		<button type="button" name="button" ng-click="showPokemon(pokename)">Submit</button>
+		<div style="text-transform: capitalize;">
+			<p>Name: <strong>{{pokemon.name}}</strong></p>
+			<!-- <p>{{ pokemon.abilities }}</p> -->
+			<p>Weight: {{ pokemon.weight }}</p>
+			<p>First ability: {{ pokemon.abilities[0].ability.name }}</p>
+			<img ng-src="{{ pokemon.sprites.front_default }}">
 		</div>
+
+		<!-- {{ pokemon }} -->
+
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
-
-		<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 	</body>
 </html>
-
-
-<!-- 10 min. -->
-<!-- 5.5 min. -->
-<!-- 5.33 min. -->

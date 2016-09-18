@@ -1,17 +1,13 @@
-angular.module('apiApp').service('apiService', function($http) {
+angular.module('app4').service('service', function($http) {
 
-  this.getPlanets = function() {
+  this.getPokemon = function(pokename) {
 
     return $http({
-
       method: 'GET',
-      url: 'http://swapi.co/api/planets/'
-
-      
+      url: 'https://pokeapi.co/api/v2/pokemon/' + pokename
     });
 
   };
-
 
 
 });
