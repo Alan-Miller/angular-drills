@@ -1,7 +1,8 @@
 angular.module('app7')
-.directive('directiveName', function() {
+.directive('headerDirective', function() {
     return {
-      template: 'Name: {{customer.name}} Address: {{customer.address}}'
+      templateUrl: 'header.html',
+      // template: 'HI',
+      restrict: 'E'
     };
-  });
 });
