@@ -1,5 +1,14 @@
-header {
+header-directive {
   height: 200px;
+  width: 100%;
+  background-color: lightblue;
+  font-family: sans-serif;
+}
+
+
+.header {
+  height: 200px;
+  width: 100%;
   background-color: lightblue;
   font-family: sans-serif;
 }
