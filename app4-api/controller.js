@@ -4,10 +4,10 @@ angular.module('app4').controller('Ctrl4', function($scope, service4) {
 
   $scope.getChars = function() {
 
-    service4.getChars().then(function() {
-      
+    service4.getChars().then(function(characters) {
+      return 
     });
-    return chars.data;
+    return characters.data;
   };
   $scope.getChars();
 
