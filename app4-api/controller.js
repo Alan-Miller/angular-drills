@@ -5,9 +5,8 @@ angular.module('app4').controller('Ctrl4', function($scope, service4) {
   $scope.getChars = function() {
 
     service4.getChars().then(function(characters) {
-      return 
+      $scope.chars = characters.data.results;
     });
-    return characters.data;
   };
   $scope.getChars();
 
