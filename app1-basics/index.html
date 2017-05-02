@@ -1,7 +1,12 @@
 <html ng-app="app1">
-	<body ng-controller="ctrl">
+	<body ng-controller="Ctrl">
 
-		<p>YAY</p>
+		<form>
+			<p>This is a form.</p>
+			<p>{{typey}}</p>
+			<input size="50" Ctype="text" placeholder="type here" ng-model="typey">
+
+		</form>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
