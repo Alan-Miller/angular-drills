@@ -5,6 +5,12 @@
 	<body ng-controller="Ctrl">
 
 		{{test}}
+		<ul ng-repeat="datum in data">
+			<li class="row">
+				<p>{{datum.name}}</p>
+				<p class="personData">{{datum.email}}</p>
+			</li>
+		</ul>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>

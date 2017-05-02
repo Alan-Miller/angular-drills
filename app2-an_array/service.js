@@ -102,7 +102,9 @@ var myData = [
 ];
 
 angular.module('app2').service('service', function($http) {
-	this.showInfo = function() {
-		return myData;
-	}
+
+	this.data = myData;
+
+
+
 });
