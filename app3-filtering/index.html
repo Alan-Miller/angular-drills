@@ -2,8 +2,12 @@
 	<body ng-controller="Ctrl3">
 		<p>Something</p>
 		<p>{{test}}</p>
-		<ul ng-repeat="datum in data">
+
+		<input type="text" ng-model="dataFilter">
+
+		<ul ng-repeat="datum in data | filter: dataFilter">
 			<li>{{datum.name}}</li>
+			<li>{{datum.email}}</li>
 		</ul>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>

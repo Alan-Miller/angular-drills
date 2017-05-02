@@ -102,9 +102,8 @@ var myData = [
 ];
 
 
-angular.module('app3').service('service3', function($http));
+angular.module('app3').service('service3', function($http) {
 
 	this.data = myData;
-
-
+	
 });
