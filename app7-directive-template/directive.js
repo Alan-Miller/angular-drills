@@ -5,6 +5,6 @@ angular.module('app7')
     scope: {
 
     },
-    templateUrl: './'
+    templateUrl: 'header.html'
   };
 });
