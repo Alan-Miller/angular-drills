@@ -7,12 +7,12 @@ angular.module('app6', ['ui.router'])
     .state('details', {
       url: '/details',
       templateUrl: 'details/details.html',
-      controller: 'detailsController'
+      controller: 'detailsCtrl'
     })
     .state('signup', {
       url: '/signup',
       templateUrl: 'signup/signup.html',
-      controller: 'signupController'
+      controller: 'signupCtrl'
     });
 
 });
