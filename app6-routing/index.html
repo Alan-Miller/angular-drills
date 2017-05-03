@@ -1,12 +1,25 @@
 <html ng-app="app6">
 	<body ng-controller="ctrl6">
-
-
-
 		<h1>app6 - routing</h1>
+
+
+		<ul>
+			<li ui-sref="details">DETAILS</li>
+			<li ui-sref="signup">SIGN UP</li>
+		</ul>
+
+
+		<ui-view></ui-view>
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
+		<script src="details/detailsCtrl.js"></script>
+		<script src="signup/signupCtrl.js"></script>
+
 	</body>
 </html>
