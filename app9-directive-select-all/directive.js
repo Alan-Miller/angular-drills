@@ -3,9 +3,9 @@ angular.module('app9')
   return {
     restrict: 'A',
     link: function(scope, elem, attr) {
-      console.log(scope);
-      console.log(elem);
-      console.log(attr);
+      elem.on('click', function() {
+        this.select()
+      })
     }
   }
 });
