@@ -1,7 +1,7 @@
 angular.module('app7')
 .directive('directive', function() {
   return {
-    restrict: 'AE',
+    restrict: 'E',
     templateUrl: 'header.html'
   };
 });
