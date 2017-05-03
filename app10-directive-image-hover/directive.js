@@ -1,10 +1,10 @@
 angular.module('app10')
 .directive('directive', function() {
   return {
-    restrict: 'AE',
+    restrict: 'E',
     scope: {
-
+      imgsrc: '='
     },
-    templateUrl: './'
+    template: '<img ng-src={{imgsrc}}>'
   };
 });
